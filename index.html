@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Showcase</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  padding: 30px;
+}
+
+.card {
+  background: white;
+  max-width: 750px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.product-image {
+  background: linear-gradient(135deg, #cbd5e1, #64748b);
+  min-height: 230px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 65px;
+  transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+  transform: scale(1.04);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.features span {
+  background: #dbeafe;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  background: #0284c7;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+@media (min-width: 768px) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <div class="product-image">
+    💻
+  </div>
+
+  <div class="details">
+
+    <div class="top">
+      <span>Category</span>
+      <span>⭐ 4.9</span>
+    </div>
+
+    <h2>Desk Workspace Mat</h2>
+
+    <p>Make your workspace look clean and stylish.</p>
+
+    <div class="features">
+      <span>Soft</span>
+      <span>Waterproof</span>
+      <span>Durable</span>
+    </div>
+
+    <div class="bottom">
+      <div>
+        <h3>₹1,499</h3>
+        <small>Tax included</small>
+      </div>
+
+      <button>Add to Bag</button>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
